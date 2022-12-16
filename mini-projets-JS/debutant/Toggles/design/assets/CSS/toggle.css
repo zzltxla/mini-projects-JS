@@ -31,35 +31,43 @@ h1 {
     margin: 1rem;
     background-color: #E2BCB7;
     border-radius: 25px;
+    transition: .2s ease-in-out;
 }
+
+.switch.\.changeColor {
+    background: rgb(226,188,183);
+    background: linear-gradient(90deg, rgba(226,188,183,1) 25%, rgba(158,157,137,1) 52%);
+}
+
 button {
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 50%;
     border: none;
     background-color: #E2BCB7;
+    transition: .2s ease-in-out;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;;
 }
-.LeftToRight {
-    animation: toLeft 1s ease-in-out .2s 1 linear forwards;
+
+button.\.LeftToRight {
+    transform: translateX(3.3rem);
 }
-    @keyframes toLeft {
+    /* @keyframes toLeft {
         0% {
             transform: translateX(0px);
         }
         100% {
-            transform: translateX(100px);
+            
         }
-    }
-.changeColor {
-    animation: colorChange 1s ease-in-out .2s 1 linear forwards;
-}
-    @keyframes colorChange {
+    } */
+/* .changeColor {
+    
+} */
+    /* @keyframes colorChange {
         0% {
             background-color: #E2BCB7;
         }
         100% {
-            background: rgb(226,188,183);
-            background: linear-gradient(90deg, rgba(226,188,183,1) 35%, rgba(158,157,137,1) 87%);
+
         }
-    }
+    } */
