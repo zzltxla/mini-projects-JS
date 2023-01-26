@@ -10,5 +10,66 @@
         and field confirmation (should check if the value of the linked field is the same).
         If form is invalid it shouldn't be submitted and errors must be shown.
     -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        #container {
+            background-color: white;
+            width: 35%;
+            height: auto;
+            border-radius: 5px;
+        }
+        #container div {
+            padding-left: 2rem;
+        }
+        input:focus {
+            outline: none;
+            border-bottom: black 2px solid;
+        }
+        input {
+            border: none;
+            border-bottom: lightgrey 2px solid;
+            width: 15rem;
+            height: 3rem;
+        }
+        .red {
+            color: red;
+        }
+        button {
+            border: none;
+            width: 10rem;
+            height: 3rem;
+            background-color: lightgrey;
+            font-size: 1.2rem;
+            margin: 2rem;
+        }
+    </style>
+    <div id="container">
+        <div id="name">
+            <p>Name</p>
+            <input type="text" id="name-ipt">
+        </div>
+        <div id="email">
+            <p>Email</p>
+            <input type="text" id="email-ipt">
+        </div>
+        <div id="password">
+            <p>Password</p>
+            <input type="text" id="password-ipt">
+        </div>
+        <div id="confirm">
+            <p>Confirm password</p>
+            <input type="text" id="confirm-ipt">
+        </div>
+        <button>
+            SUBMIT
+        </button>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

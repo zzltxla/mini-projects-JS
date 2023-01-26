@@ -1,0 +1,44 @@
+html {
+    cursor: none;
+}
+/* body{
+    height: 300vh;
+} */
+
+div {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.open {
+    display: block;
+}
+.round {
+    display: flex;
+    align-items: center;
+    animation-name: circling;
+    animation-duration: 1s;
+    background-color: transparent;
+    border-radius: 50%;
+    transform: translate(-15px, -5px);
+}
+
+    @keyframes circling {
+        0% {
+            width: 10vh;
+            height: 10vh;
+            border: #a83232 2px solid;
+        }
+        50% {
+            width: 9vh;
+            height: 9vh;
+            border: #a8323280 3px solid;
+        }
+        100% {
+            width: 1vh;
+            height: 1vh;
+            border: #a8323215 1px solid;
+        }
+    }
